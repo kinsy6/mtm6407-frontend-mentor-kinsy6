@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News homepage | Frontend Mentor</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preload" as="font" href="./assets/fonts/Inter-VariableFont_slnt,wght.ttf" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="site-header container">
+    <a href="#" class="logo" aria-label="News homepage">
+      <img src="./assets/images/logo.svg" alt="W." width="64" height="40">
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+      <img class="icon-open" src="./assets/images/icon-menu.svg" alt="" aria-hidden="true">
+      <img class="icon-close" src="./assets/images/icon-menu-close.svg" alt="" aria-hidden="true">
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+      </ul>
+    </nav>
+    <div class="scrim" hidden></div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="grid">
+
+      <article class="hero">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./assets/images/image-web-3-desktop.jpg">
+          <img src="./assets/images/image-web-3-mobile.jpg" alt="Abstract colorful geometric shapes" class="hero-img">
+        </picture>
+        <div class="hero-content">
+          <h1>The Bright Future of Web 3.0?</h1>
+          <div class="hero-meta">
+            <p>
+              We dive into the next evolution of the web that claims to put the power of the platforms
+              back into the hands of the people. But is it really fulfilling its promise?
+            </p>
+            <a class="btn" href="#" aria-label="Read more about Web 3.0">Read more</a>
+          </div>
+        </div>
+      </article>
+
+      <aside class="new">
+        <h2>New</h2>
+        <a class="new-item" href="#">
+          <h3>Hydrogen VS Electric Cars</h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </a>
+        <hr>
+        <a class="new-item" href="#">
+          <h3>The Downsides of AI Artistry</h3>
+          <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        </a>
+        <hr>
+        <a class="new-item" href="#">
+          <h3>Is VC Funding Drying Up?</h3>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </a>
+      </aside>
+
+      <section class="stories">
+        <article class="story">
+          <img src="./assets/images/image-retro-pcs.jpg" alt="" width="200" height="254" loading="lazy">
+          <div class="story-meta">
+            <span class="num">01</span>
+            <a href="#"><h3>Reviving Retro PCs</h3></a>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </article>
+
+        <article class="story">
+          <img src="./assets/images/image-top-laptops.jpg" alt="" width="200" height="254" loading="lazy">
+          <div class="story-meta">
+            <span class="num">02</span>
+            <a href="#"><h3>Top 10 Laptops of 2022</h3></a>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </article>
+
+        <article class="story">
+          <img src="./assets/images/image-gaming-growth.jpg" alt="" width="200" height="254" loading="lazy">
+          <div class="story-meta">
+            <span class="num">03</span>
+            <a href="#"><h3>The Growth of Gaming</h3></a>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>.
+      Coded by <a href="#" rel="author">Kinsy Nyahim Awassume</a>.
+    </p>
+  </footer>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
+
